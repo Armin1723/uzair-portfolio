@@ -35,28 +35,28 @@ const aboutStats = [
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    title: "Naxpace",
+    description: "The financial supervisor firm for all your needs",
+    image: "/assets/naxpace.png",
+    href: "https://naxpace.me/",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
+    title: "Adabkari",
+    description: "One stop shop for all traditional and chikan clothing.",
+    image: "/assets/adabkari.png",
+    href: "https://adabkari.com/",
   },
   {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
+    title: "Specific Relief",
+    description: "Therapy, courses and coaching for mental wellness",
+    image: "/assets/specific-relief.png",
+    href: "https://specificrelief.com/",
   },
   {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    title: "Green Turf Box",
+    description: "Indoor synthetic playground for cricket lovers",
+    image: "/assets/green-box-turf.png",
+    href: "https://www.green-turf-box.com/",
   },
   {
     title: "This website",
@@ -345,7 +345,7 @@ export default function Home() {
                                 autoPlay
                                 loop
                                 muted
-                                className="aspect-video h-full w-full rounded-t-md bg-primary object-cover"
+                                className="aspect-video h-full w-full rounded-t-md bg-gray-900 object-cover"
                               />
                             ) : (
                               <Image
@@ -354,7 +354,7 @@ export default function Home() {
                                 width={600}
                                 height={300}
                                 quality={100}
-                                className="aspect-video h-full w-full rounded-t-md bg-primary object-cover"
+                                className="aspect-video h-full w-full rounded-t-md bg-gray-900 object-contain"
                               />
                             )}
                           </Link>

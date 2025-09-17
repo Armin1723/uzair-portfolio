@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import Preloader from "@/components/Preloader";
 import styles from "@/styles/Container.module.css";
+import Image from "next/image";
 
 type IconProps = {
   ["data-hide"]: boolean;
@@ -164,7 +165,15 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <span className="text-lg font-semibold">wendo</span>
+          {/* <span className="text-lg font-semibold">Uzair</span> */}
+          <Image
+            src="/assets/logo-full.png"
+            alt="Uzair logo"
+            width={100}
+            height={20}
+            priority
+            className="aspect-video h-12 select-none object-contain"
+          />
         </Link>
 
         {/* Desktop menu */}
@@ -192,7 +201,16 @@ export default function Container(props: ContainerProps) {
             >
               {/* Expandable menu */}
               <div className="flex h-20 max-h-20 min-h-[60px] w-full items-center justify-between border-b pl-[22px] pr-1">
-                <span className="text-base font-medium lowercase">Menu</span>
+                <span className="text-base font-medium lowercase">
+                  <Image
+                    src="/assets/logo-full.png"
+                    alt="Uzair logo"
+                    width={80}
+                    height={20}
+                    priority
+                    className="aspect-video h-12 select-none object-contain"
+                  />
+                </span>
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   className={styles.burger}
