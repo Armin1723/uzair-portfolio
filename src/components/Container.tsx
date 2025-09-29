@@ -85,7 +85,7 @@ export default function Container(props: ContainerProps) {
   const router = useRouter();
   const meta = {
     title: "Uzair | Full-Stack Developer",
-    description: `Full-stack website developer and TypeScript enthusiast.`,
+    description: `Full-stack website developer that specializes in building modern web applications using React and WordPress.`,
     image: "/assets/logo.webp",
     type: "website",
     ...customMeta,
@@ -122,19 +122,19 @@ export default function Container(props: ContainerProps) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://www.wendoj.codes${router.asPath}`}
+          content={`https://www.developeruzair.com${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://www.wendoj.codes${router.asPath}`}
+          href={`https://www.developeruzair.com${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="WendoJ" />
+        <meta property="og:site_name" content="Developer Uzair" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="WendoJ" />
+        <meta name="twitter:site" content="Developer Uzair" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
